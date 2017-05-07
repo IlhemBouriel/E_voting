@@ -1,0 +1,64 @@
+<head>
+    <title>ethereum-example</title>
+</head>
+
+<body>
+    <h1>Welcome to Ethereum!</h1>
+
+    {{> auth}}
+</body>
+
+
+
+<template name="auth">
+    <h1>Add Voter</h1>
+    <section id="register">
+    
+        <h1>Register</h1>
+     
+              <div class="questionaire">
+                <form>
+    
+                      <label for="nameInput">
+                        <h1>Full name</h1>
+                      </label>
+                      <input type="text" maxlength="48" class="form-control getName make_btn_appear" id="full_name" placeholder="Full Name"  required="required" />
+                   
+                      <label for="nameInput">
+                        <h1>Email</h1>
+                      </label>
+                      <input type="text" maxlength="48" class="form-control getName make_btn_appear" id="email" placeholder="Email"  required="required" />
+                    
+                      <label for="nameInput">
+                        <h1>CIN</h1>
+                      </label>
+                      <input type="text" maxlength="48" class="form-control getName make_btn_appear" id="cin" placeholder="CIN"  required="required" />
+                   
+                      <label for="nameInput">
+                        <h1>Birthday</h1>
+                      </label>
+                      <input type="calendar" name="date" id="datepicker">
+                    
+                      <label for="nameInput">
+                        <h1>Gouvernerat</h1>
+                      </label>
+                      <input type="text" maxlength="48" class="form-control getName make_btn_appear" id="gouvernerat" placeholder="Gouvernerat"  required="required" />
+                    
+                      <label for="nameInput">
+                        <h1>Password</h1>
+                      </label>
+                      <input type="password" maxlength="48" class="form-control getName make_btn_appear" id="password" placeholder="Password"  required="required" />
+                    
+                      <label for="nameInput">
+                        <h1>Fake Password</h1>
+                      </label>
+                      <input type="password" maxlength="48" class="form-control getName make_btn_appear" id="fakePassword" placeholder="Fake Password"  required="required" />
+                    
+                </form>
+              </div>
+              <button id="submitRegister" class="btn btn-success btn-lg">Submit</button>
+            
+  </section>
+</template>
+
+
